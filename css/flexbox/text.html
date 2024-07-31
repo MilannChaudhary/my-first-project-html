@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      :root {
+        --main-bg: green;
+        --secondary-bg: red;
+        --main-text-color: red;
+        --main-font: arial;
+        --main-font-size: 14px;
+        --padding-amount: 10px;
+      }
+
+      .class1 {
+        background-color: var(--secondary-bg);
+        height: 100px;
+        width: 100px;
+
+        font-size: var(--main-font-size);
+
+        --class1-variable: aqua;
+      }
+
+      body {
+        background: var(--main-bg);
+      }
+
+      .class2 {
+        height: 200px;
+        width: 200px;
+        font-size: 40px;
+        background-color: var(--class1-variable);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="class1">
+      <p>Gehendra Mama is gay</p>
+      <div class="class2">Nabin mama is also Gay</div>
+    </div>
+  </body>
+</html>

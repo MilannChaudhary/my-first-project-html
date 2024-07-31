@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0px;
+      }
+      .container {
+        display: flex;
+        /* background-color: grey; */
+        background-image: url(assests/pexels-photo-26729111.webp);
+        width: 100vw;
+        height: 900px;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: nowrap;
+        overflow: scroll;
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      .container div {
+        width: 300px;
+        height: 300px;
+        background-color: red;
+        margin: 5px;
+        text-align: center;
+        align-content: center;
+        font-size: 2em;
+        color: blue;
+      }
+
+      .item-8 {
+        order: -1;
+        flex-grow: 1;
+      }
+
+      .item-2 {
+        order: 2;
+        flex-grow: 2;
+      }
+
+      .item-3 {
+        order: 1;
+        flex-grow: 5;
+      }
+      .item-4 {
+        flex-shrink: 0;
+      }
+
+      @media screen and (width<600px) {
+        .container {
+          /* background-color: aqua; */
+          background-image: url(assests/pexels-photo-12770803.jpeg);
+          flex-wrap: nowrap;
+        }
+      }
+      @media screen and (width>600px) and (width<992px) {
+        .container {
+          /* background-color: purple; */
+          background-image: url(assests/pexels-photo-12661193.webp);
+          flex-wrap: nowrap;
+          flex-direction: column;
+        }
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="item-1">
+        <i class="fa-solid fa-house"></i>
+      </div>
+      <div class="item-2">
+        <i class="fa-solid fa-cloud"></i>
+      </div>
+      <div class="item-3">
+        <i class="fa-brands fa-tiktok"></i>
+      </div>
+      <div class="item-4">4</div>
+      <div class="item-5">5</div>
+      <div class="item-6">6</div>
+      <div class="item-7">7</div>
+      <div class="item-8">8</div>
+    </div>
+  </body>
+</html>
