@@ -1,0 +1,164 @@
+.container {
+  margin: auto;
+  width: 100vw;
+  height: auto;
+  background-color: rgb(235, 235, 235);
+  padding: 10px;
+  padding-top: 100px;
+}
+
+.container div {
+  height: auto;
+  min-height: 100px;
+  background-color: rgb(222, 222, 35);
+  margin-bottom: 10px;
+  text-align: center;
+  align-content: center;
+}
+
+/* Reset Layout */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Center Div */
+.center-div {
+  margin: 0 auto;
+  width: 50%;
+}
+
+/* Responsive Image Styling */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Text Align */
+.text-center {
+  text-align: end;
+}
+
+/* Styling Links */
+
+a {
+  text-decoration: none;
+  color: blue;
+}
+
+a:hover {
+  color: darkblue;
+  font-family: monospace;
+  font-size: 30px;
+}
+
+/* Box Shadows */
+
+.box {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Rounded Corners */
+
+.rounded {
+  border-radius: 50px 50px 50px 0px;
+}
+
+/* Button Hover Effect */
+.btn {
+  background-color: blue;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: darkblue;
+}
+
+/* Fixed Header */
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+/* responsive navbar */
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+}
+.navbar a {
+  flex: 1;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Transition */
+.transition {
+  transition: all 0.3s ease-in-out;
+}
+.transition:hover {
+  transform: scale(1.4);
+}
+
+/* Responsive Div */
+
+.responsive-div {
+  width: 50%;
+}
+
+@media (max-width: 600px) {
+  .responsive-div {
+    width: 100%;
+  }
+}
+
+/* custom Scroll bar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: gray;
+  border-radius: 5px;
+}
+
+/* Gradient Background */
+.gradient-bg {
+  background: linear-gradient(to right, red, yellow);
+}
+
+/* Opacity and Transparency */
+.transparent {
+  opacity: 0.5;
+}
+
+/* Sticky Footer */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.content {
+  flex: 1;
+}
+.footer {
+  background: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Custom List Styles */
+ul.custom-list {
+  list-style: none;
+  padding: 0;
+  width: 200px;
+}
+ul.custom-list li {
+  padding: 10px;
+  background: #f9f9f9;
+  margin-bottom: 5px;
+  border-radius: 100px;
+}

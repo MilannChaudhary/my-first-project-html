@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+
+      :root {
+        --primary-color: #de5833;
+        --input-height: 40px;
+        --background-color: rgb(255, 255, 255);
+      }
+
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        /* background-color: rgb(30 30 30); */
+        background-image: url(assests/butterfly.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
+      .container {
+        height: 400px;
+        width: 800px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--background-color);
+        gap: 20px;
+        border-radius: 50px;
+        box-shadow: 0px 0px 10px 1px rgb(228, 228, 228);
+        transition: all 0.5s ease-in;
+        background-color: #ffffffb8;
+        backdrop-filter: blur(5px);
+        animation: color-change 5s infinite;
+      }
+
+      .container .logo > img {
+        width: auto;
+        height: 100px;
+        border-radius: 30%;
+      }
+
+      .container .search {
+        display: flex;
+        position: relative;
+      }
+
+      .container form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .container .search > input[type="text"] {
+        height: var(--input-height);
+        width: 400px;
+        border-radius: 50px 0px 0px 50px;
+        border: 1px var(--primary-color) solid;
+        padding-left: 40px;
+        color: #e4937d;
+        transition: 0.5s;
+      }
+
+      input:focus {
+        outline: 1px solid #df771c;
+      }
+
+      .container .search > * {
+        box-shadow: 1px 2px 5px 1px #bababa;
+      }
+
+      .container .search > button {
+        height: calc(var(--input-height) + 2px);
+        width: 80px;
+        border-radius: 0px 50px 50px 0px;
+
+        background-color: var(--primary-color);
+        color: white;
+        font-family: monospace;
+        font-size: 12px;
+        border: 1px var(--primary-color) solid;
+        cursor: pointer;
+        transition: all 0.1s ease-in-out;
+      }
+      .container .search > button:hover {
+        font-size: 14px;
+      }
+
+      .container .search i {
+        background: none;
+        box-shadow: none;
+        position: absolute;
+        left: 15px;
+        top: 13px;
+        color: var(--primary-color);
+      }
+
+      .container .footer-note {
+        font-size: 12px;
+        font-weight: bold;
+        color: var(--primary-color);
+        font-family: monospace;
+      }
+
+      @keyframes color-change {
+        0% {
+          box-shadow: -10px -10px 10px 3px var(--primary-color);
+        }
+        50% {
+          box-shadow: 10px 10px 10px 3px rgb(6, 126, 255);
+        }
+
+        100% {
+          box-shadow: -10px -10px 10px 3px var(--primary-color);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <form action="https://www.duckduckgo.com" method="get">
+        <div class="logo">
+          <img src="assests/logo.jpg" alt="" srcset="" />
+        </div>
+        <div class="search">
+          <i class="fa-brands fa-searchengin"></i>
+          <input type="text" name="q" />
+          <button>Search</button>
+        </div>
+        <div class="footer-note">Copyright @ 2024</div>
+      </form>
+    </div>
+  </body>
+</html>

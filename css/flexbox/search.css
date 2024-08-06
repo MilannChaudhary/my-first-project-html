@@ -1,0 +1,52 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  background-image: url("./assests/search.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.find {
+  background-color: rgba(255, 255, 255, 0);
+  display: flex;
+  height: 400px;
+  width: 800px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.image {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+
+.image img {
+  border-radius: 10%;
+  width: 50%;
+}
+
+form {
+  display: flex;
+}
+
+input {
+  border-radius: 20px 0px 0px 20px;
+  height: 34px;
+  width: 450px;
+}
+
+button {
+  height: 40px;
+  border-radius: 0px 20px 20px 0px;
+}

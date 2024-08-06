@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User registration'</title>
+  </head>
+  <body>
+    <a href="/">Home</a>
+    <h1>User Registration</h1>
+    <hr />
+    <form action="" method="get" enctype="">
+      <p>
+        <label for="">User Name:</label>
+        <input name="userName" type="text" required />
+      </p>
+      <p>
+        <label for="">Email:</label>
+        <input type="email" />
+      </p>
+      <p>
+        <label for="">Phone:</label>
+        <input type="number" />
+      </p>
+      <p>
+        <label for="">Password:</label>
+        <input type="password" name="password" />
+      </p>
+      <p>
+        <label for="">Linkedln:</label>
+        <input type="url" />
+      </p>
+      <p>
+        <label for="">DOB:</label>
+        <input type="date" />
+      </p>
+
+      <p>
+        <label for="">Message:</label>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+      </p>
+      <!-- file send -->
+      <p>
+        <label for="">Upload File:</label>
+        <input type="file" multiple />
+      </p>
+      <!-- radio button -->
+      <p>
+        <label for="">Gender:</label>
+
+        <input type="radio" name="Gender" id="" /> <label for="">Male</label>
+        <input type="radio" name="Gender" id="" /> <label for="">Female</label>
+        <input type="radio" name="Gender" id="" /> <label for="">N/a</label>
+      </p>
+
+      <!-- checkbox -->
+      <p>
+        <label for="">What do you wanna learn?</label><br />
+        <input type="checkbox" name="" id="" /> <label for="">HTML</label><br />
+        <input type="checkbox" name="" id="" /> <label for="">CSS</label><br />
+        <input type="checkbox" name="" id="" /> <label for="">JavaScript</label
+        ><br />
+      </p>
+
+      <p>
+        <input type="checkbox" name="" id="" />
+        <label for="">I accept the T&Cs</label>
+      </p>
+      <!-- dropdownselect -->
+      <label for="">Fruit List</label>
+      <select name="" id="" multiple>
+        <option value="">--select--</option>
+
+        <option value="">Banana</option>
+        <option value="">Mango</option>
+        <option value="">Pineapple</option>
+      </select>
+      <p>
+        <label for="">Fruit and Vegi List</label>
+        <select name="" id="">
+          <optgroup label="Fruits">
+            <option value="">Banana</option>
+            <option value="">Mango</option>
+            <option value="">Pineapple</option>
+          </optgroup>
+          <optgroup label="Vegi">
+            <option value="">potato</option>
+            <option value="">Cauli</option>
+            <option value="">Saag</option>
+          </optgroup>
+        </select>
+      </p>
+      <p>
+        <label for="">Fruit and Vegi List</label>
+        <input type="text" list="linked" />
+        <datalist id="linked">
+          <option value="Banana">Banana</option>
+          <option value="Mango">Mango</option>
+          <option value="Pineapple">Pineapple</option>
+          <option value="potato">potato</option>
+          <option value="Cauli">Cauli</option>
+          <option value="Saag">Saag</option>
+        </datalist>
+      </p>
+      <p>
+        <button>Submit</button>
+      </p>
+      <br />
+    </form>
+  </body>
+</html>
